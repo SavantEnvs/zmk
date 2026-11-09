@@ -1,0 +1,9 @@
+project: savantenvs/zmk
+target: hid_hkro
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/hid_hkro/testsuite
+cmds:
+  - cmd: /mayhem/hid_hkro
+    libfuzzer: true
+    timeout: 5
