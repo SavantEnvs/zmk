@@ -1,0 +1,3 @@
+#include "config_common.h"
+#define CONFIG_ZMK_HID_REPORT_TYPE_HKRO 1
+#define CONFIG_ZMK_HID_KEYBOARD_REPORT_SIZE 10

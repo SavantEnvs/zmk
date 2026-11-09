@@ -1,0 +1,9 @@
+project: savantenvs/zmk
+target: studio_rpc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/studio_rpc/testsuite
+cmds:
+  - cmd: /mayhem/studio_rpc
+    libfuzzer: true
+    timeout: 5
